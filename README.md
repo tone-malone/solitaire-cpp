@@ -6,7 +6,7 @@ g++ compile command:
 
 
 
-g++ main.cpp tests/util_tests.cpp -o solitaire -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
+g++ main.cpp -o solitaire -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
 
 
 
