@@ -79,7 +79,6 @@ struct DragState {
 // Global containers.
 std::vector<Animation> animations;
 DragState dragState;
-std::stack<class Game> undoStack;
 
 // ---------------------------
 // Utility Functions
