@@ -641,7 +641,7 @@ bool win;
         return false;
     }
     
-    // Auto–complete function: moves all eligible cards.
+    // Auto–complete function: processes only a single eligible move per call.
     void autoComplete() {
         // For each card in Waste and Tableaus, if it can be moved to foundation, animate the move.
         // For simplicity, only process one move per call.
