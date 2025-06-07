@@ -344,7 +344,7 @@ public:
                     int largeSize = CARD_WIDTH - 20;
                     SDL_Rect dest{ x + 15, y + 20, 45, 70};
                     SDL_RenderCopy(mRenderer, faceTexture, nullptr, &dest);
-                } 
+                } else {
                     // Fallback: use suit texture.
                     SDL_Texture* suitTexture = nullptr;
                     switch(card.suit) {
@@ -363,9 +363,10 @@ public:
                     std::string valueText = cardValueToString(card);
                     SDL_Color textColor = {0, 0, 0, 255};
                     if (card.suit == 1 || card.suit == 2)
-                    textColor = {255, 0, 0, 255}; else
-                    textColor = {0, 0, 0, 255};
-                    
+                        textColor = {255, 0, 0, 255};
+                    else
+                        textColor = {0, 0, 0, 255};
+
                     SDL_Surface* textSurface = TTF_RenderText_Blended(mFont, valueText.c_str(), textColor);
                     if (textSurface) {
                         SDL_Texture* textTexture = SDL_CreateTextureFromSurface(mRenderer, textSurface);
@@ -376,6 +377,7 @@ public:
                         }
                         SDL_FreeSurface(textSurface);
                     }
+                }
                 
             }
         } else {
