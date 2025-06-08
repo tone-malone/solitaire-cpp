@@ -1,0 +1,1 @@
+g++ src/main.cpp src/Animation.cpp src/Button.cpp src/Card.cpp src/CardRenderer.cpp src/Game.cpp src/GameEngine.cpp src/SoundManager.cpp src/Utility.cpp -o solitaire -lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
