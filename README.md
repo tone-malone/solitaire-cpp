@@ -1,7 +1,7 @@
 # solitaire-cpp
-C++ Solitaire
+C++ Solitaire 
 
-g++ compile command: 
+compile command: 
 ./build.sh
 
 Run command: 
